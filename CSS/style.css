@@ -109,6 +109,10 @@ section.banner a{
     border-radius: 10px;
     padding: 8px 40px 8px 40px;
 }
+section.banner img{
+    width: 80%;
+    max-width: 800px;
+}
 /*============================================================================
                                 SECTION-PRODUCTS
 ==============================================================================*/ 
@@ -198,4 +202,70 @@ footer ul li{
 }
 footer ul li a{
     color: #839691;
+}
+@media (max-width: 600px) {
+    header nav{
+        display: block;
+        text-align: center;
+    }
+    header nav ul{
+        flex-wrap: wrap;
+    }
+    header nav ul li{
+        width: 40%;
+        margin: 4vw;
+    }
+    header nav h1{
+        margin: 3vw;
+    }
+    section.banner{
+        padding: 0 0 4vw 0;
+    }
+    section.banner h2{
+        font-size: 2.5rem;
+    }
+    section.banner p{
+        font-size: 1.5rem;
+        margin: 4vw 0 4vw 0;
+    }
+    section.products h2{
+        font-size: 2rem;
+    }
+    section.products p{
+        font-size: 1.5rem;
+    }
+    section.products ul{
+        flex-wrap: wrap;
+    }
+    section.products ul li{
+        width: 100%;
+        margin: 2vw 0 2vw 0;
+        padding: 5vw;
+    }
+    section.build h2{
+        font-size: 2rem;
+    }
+    section.build p{
+        font-size: 1.5rem;
+    }
+    section.build > div{
+        flex-wrap: wrap;
+    }
+    section.build > div img{
+        width: 100%;
+        margin: 0 0 4vw 0;
+    }
+    footer{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    footer h1{
+        width: 100%;
+        margin: 2vw 0 2vw 0;
+    }
+    footer ul{
+        text-align: center;
+        margin: 2vw 0 2vw 0;
+    }
 }
